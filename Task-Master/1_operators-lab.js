@@ -21,7 +21,6 @@ let buyer = {                 // Object → complex structure to store data
   name: "Ali",
   country: "Iraq"
 };
-
 // Print the type of each variable
 console.log(typeof productName);   // "string" → shows that productName is a text
 console.log(typeof price);         // "number" → price is numeric
@@ -29,6 +28,9 @@ console.log(typeof quantity);      // "number" → quantity is numeric
 console.log(typeof isDiscount);    // "boolean" → true/false
 console.log(typeof discountValue); // "string" → even though it looks like a number, it's text
 console.log(typeof buyer);         // "object" → complex object
+
+
+
 
 /********************************************
  *  PART 2: Concatenation
@@ -44,6 +46,9 @@ console.log(message1);
 // Result → "Hello Hassan, you are 25 years old."
 // Explanation: + operator combines strings; numbers are converted to string if needed
 
+
+
+
 /********************************************
  *  PART 3: Template Literals
  *  Objective: Use template literals for easier string interpolation
@@ -53,6 +58,9 @@ console.log(message2);
 // Result → "Hello Hassan, you are 25 years old."
 // Explanation: `${}` allows us to insert variables directly into strings
 // Using backticks ` instead of quotes makes it easier than + concatenation
+
+
+
 
 /********************************************
  *  PART 4: Unary + Operator & Type Coercion
