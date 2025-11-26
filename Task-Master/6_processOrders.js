@@ -1,6 +1,5 @@
 /*
-Task:
-
+ PART 6:
 - You have a list of customer orders
 - Remove orders that have amount less than 10 or empty name
 - Collect all valid orders in one array
