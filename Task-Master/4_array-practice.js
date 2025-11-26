@@ -22,18 +22,20 @@
 
 let shoppingList = ["Milk", "Bread", "Eggs", "Butter"];
 
-// Add items
-shoppingList.push("Cheese");        // Add at the end
-shoppingList.unshift("Juice");      // Add at the beginning
-
 // Remove items that were bought
 shoppingList.shift();               // Remove first item
 shoppingList.pop();                 // Remove last item
+
+// Add items
+shoppingList.push("Cheese");        // Add at the end
+shoppingList.unshift("Juice");      // Add at the beginning
 
 console.log("Shopping List:", shoppingList); 
 // Result: ["Milk", "Bread", "Eggs", "Butter"]
 console.log("Remaining Items:", shoppingList.length); 
 // Result: 4
+
+
 
 
 // ===============================
@@ -50,6 +52,8 @@ console.log("Sayed index:", employees.indexOf("Sayed"));
 // Result: 2
 console.log("Osama index:", employees.indexOf("Osama"));   
 // Result: -1
+
+
 
 
 // ===============================
@@ -69,6 +73,8 @@ console.log("Sorted Students:", students);
 // Result: ["Ahmed", "Lina", "Omar", "Zain"]
 
 
+
+
 // ===============================
 // PART 4: Slice Student Grades
 // Instructions:
@@ -84,6 +90,8 @@ let selectedGrades = grades.slice(1, 5);
 
 console.log("Selected Grades:", selectedGrades);
 // Result: [70, 90, 60, 75]
+
+
 
 
 // ===============================
