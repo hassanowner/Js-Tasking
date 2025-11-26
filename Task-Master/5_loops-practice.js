@@ -36,6 +36,8 @@ console.log("Remaining Items:", shoppingList.length);
 // Result: 4
 
 
+
+
 // ===============================
 // PART 2: Search for Employees
 // Instructions:
@@ -50,6 +52,8 @@ console.log("Sayed index:", employees.indexOf("Sayed"));
 // Result: 2
 console.log("Osama index:", employees.indexOf("Osama"));   
 // Result: -1
+
+
 
 
 // ===============================
@@ -69,6 +73,8 @@ console.log("Sorted Students:", students);
 // Result: ["Ahmed", "Lina", "Omar", "Zain"]
 
 
+
+
 // ===============================
 // PART 4: Slice Student Grades
 // Instructions:
@@ -84,6 +90,8 @@ let selectedGrades = grades.slice(1, 5);
 
 console.log("Selected Grades:", selectedGrades);
 // Result: [70, 90, 60, 75]
+
+
 
 
 // ===============================
