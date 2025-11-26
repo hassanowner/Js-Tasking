@@ -15,8 +15,8 @@
 // PARR 1: Manage a Shopping List
 // Instructions:
 // 1. Start with 4 items in the shopping list.
-// 2. Add "Cheese" at the end and "Juice" at the beginning.
-// 3. Remove the first and last items (bought).
+// 2. Remove the first and last items (bought).
+// 3. Add "Cheese" at the end and "Juice" at the beginning.
 // 4. Display the final list and remaining item count.
 // ===============================
 
