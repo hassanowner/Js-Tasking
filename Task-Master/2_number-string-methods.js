@@ -12,6 +12,7 @@
    - Format the product name
    - Create a message using concatenation and template literals
 =============================== */
+
 let productName = " Laptop  "; // Product name with extra spaces
 let price = 500;               // Price per unit
 let quantity = 2;              // Quantity of product
@@ -28,6 +29,9 @@ console.log(message1);
 
 let message2 = `Product: ${productName}, Total Price: ${totalPrice} USD`; // Template literal
 console.log(message2);
+
+
+
 
 
 /* ===============================
@@ -51,6 +55,9 @@ console.log(priceString);  // "123.46"
 console.log(finalText);    // "Price: 123.46 USD"
 
 
+
+
+
 /* ===============================
    PART 3: Number Methods Challenge
    Objective:
@@ -70,6 +77,8 @@ console.log(num);         // 64
 console.log(absNum);      // 36
 console.log(sqrtNum);     // 8
 console.log(finalString); // "8.00"
+
+
 
 
 /* ===============================
@@ -99,6 +108,9 @@ console.log(bonusAmount);   // 200
 console.log(finalSalary);   // 1666.66...
 console.log(roundedSalary); // 1667
 console.log(salaryText);    // "AHMED will receive 1667 USD"
+
+
+
 
 
 /* ===============================
