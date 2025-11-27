@@ -96,7 +96,12 @@ The purpose of this repository is purely **educational**:
 - **Scope: Lexical** – Lexical scope and closures.
 
 ---
-
+### 14-18 Functional Methods Mix
+- **Map Exercises** – This file contains practical tasks focused on the **`map`** method, transforming arrays and creating new arrays based on existing data.  
+- **Filter Exercises** – Here, learners practice using **`filter`** to select specific elements from arrays according to conditions.  
+- **Reduce Exercises** – This file introduces **`reduce`** for aggregating values, such as sums, products, or combined results.  
+- **ForEach Exercises** – Tasks in this file focus on **`forEach`** to iterate over arrays and perform side-effects or accumulate results manually.  
+- **Combined Mix** – The final file combines **`map`**, **`filter`**, **`reduce`**, and **`forEach`** in realistic scenarios, showing how these functional methods can be used together for complex data processing.
 ## How to Use
 1. Open each JavaScript file in your preferred editor.  
 2. Read the comments and instructions for each task.  
