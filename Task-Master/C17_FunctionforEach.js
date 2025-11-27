@@ -22,6 +22,10 @@ console.log("Doubled Numbers:", doubled);
 // Expected Output: [4, 10, 16, 20]
 
 
+
+
+
+
 // =========================
 // Test Task 2 – Calculating Total Price
 // Concept: Sum all numbers in an array using forEach
@@ -37,6 +41,10 @@ prices.forEach(function(price) {
 
 console.log("Total =", total);
 // Expected Output: Total = 50
+
+
+
+
 
 
 // =========================
@@ -56,6 +64,10 @@ rawData.forEach(function(item) {
 
 console.log("Clean Data:", cleanData);
 // Expected Output: ["Ali", "Sara", "Hassan", "Reem"]
+
+
+
+
 
 
 // =========================
@@ -86,6 +98,10 @@ console.log("Total Amount:", totalAmount);
 // Expected Output: Total Amount: 85
 console.log("Delivered Orders:", deliveredCount);
 // Expected Output: Delivered Orders: 2
+
+
+
+
 
 
 // =========================
