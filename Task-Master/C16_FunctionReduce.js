@@ -12,7 +12,6 @@ Reduce is used to accumulate values from an array into a single result:
 - Task 4: Aggregate student scores with pass/fail categorization
 */
 
-
 // ===============================
 // Task 1 – Sum of Numbers
 // ===============================
@@ -33,6 +32,8 @@ console.log("Task 1 – Total Sum of Numbers:");
 console.log(totalSum);
 // Expected output: 100
 console.log("---------------------------------------------------");
+
+
 
 
 
@@ -68,6 +69,8 @@ console.log("---------------------------------------------------");
 
 
 
+
+
 // ===============================
 // Task 3 – Count Active Users
 // ===============================
@@ -97,6 +100,11 @@ console.log("Task 3 – Number of Active Users:");
 console.log(activeCount);
 // Expected output: 2
 console.log("---------------------------------------------------");
+
+
+
+
+
 
 
 
@@ -145,8 +153,13 @@ Expected output:
 console.log("---------------------------------------------------");
 
 
+
+
+
+
+
 // ===============================
-// Task4. 4 – map + filter + reduce (Nested)
+// Task 5 – map + filter + reduce (Nested)
 // ===============================
 //
 // This task demonstrates how to combine map, filter, and reduce
