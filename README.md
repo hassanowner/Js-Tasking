@@ -15,7 +15,7 @@ The purpose of this repository is purely **educational**:
 
 ## Structure & Topics 🤖
 
-### 1. Data Types & Variables
+### 1. Data Types & Variables ( Part 1 & 2 )
 - **Data Types and `typeof` Operator** – Identifying different data types in JavaScript.  
 - **Variables Introduction** – Declaring and initializing variables.  
 - **Identifiers: Name Convention and Rules** – Guidelines for naming variables and functions.  
