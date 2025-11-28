@@ -46,6 +46,8 @@ console.log(book.describe());
 
 
 
+
+
 /**************************************
  * 2) Dynamic Property Access
  * Dot notation vs bracket notation.
@@ -67,6 +69,8 @@ console.log(player.keyName); // undefined
 
 // Bracket notation using dynamic key
 console.log(player[keyName]); // 10
+
+
 
 
 
@@ -100,6 +104,8 @@ console.log(student.bestGrade());                // 90
 
 
 
+
+
 /***************************************
  * 4) Creating Object Using new Object()
  * Adding properties and methods afterward.
@@ -115,6 +121,9 @@ device.info = function () {
 };
 
 console.log(device.info());  // Brand: Samsung, Price: 300
+
+
+
 
 
 
@@ -144,6 +153,9 @@ test();
 
 
 
+
+
+
 /*************************************
  * 6) Object.create()
  * Create a new object based on another object.
@@ -163,6 +175,9 @@ obj.value = 200; // Override value
 
 console.log(obj.value);     // 200
 console.log(obj.double());  // 400
+
+
+
 
 
 
