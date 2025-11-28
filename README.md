@@ -1,5 +1,5 @@
 ![banner-review](banner-main.png)
-# JavaScript Test Tasks – Comprehensive Educational Review
+# JavaScript Test Tasks – Educational Review
 
 ## Overview 🕸️🕷️
 This repository contains a **comprehensive collection of JavaScript test tasks** designed for learning, revising, and practicing core JavaScript concepts. Each topic has dedicated exercises and challenges to help reinforce understanding.  
