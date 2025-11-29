@@ -1,206 +1,192 @@
 /*
-===============================================
-JS TOPICS COVERED IN THIS GUIDE:
-1. Comparison Operators: ==, ===, !=, !==, >, <, >=, <=
-2. Logical Operators: && (AND), || (OR), ! (NOT)
-3. If Condition: if, else if, else
-4. Nested If Condition: if statements inside other if statements
-5. Conditional Ternary Operator: condition ? exprIfTrue : exprIfFalse
-6. Nullish Coalescing Operator: ?? (use default if null or undefined)
-7. Switch Statement: switch-case-default
-8. Combined use for challenges
-===============================================
+  ===========================================================
+  JAVASCRIPT TEST TASK – OPERATORS & CONTROL FLOW
+  ===========================================================
+
+  This comprehensive test task covers the following topics:
+
+  1) Comparison Operators
+     - == Equal (checks value only)
+     - != Not Equal (checks value only)
+     - === Identical (checks value + type)
+     - !== Not Identical (checks value + type)
+     - >, >=, <, <= (Relational operators for comparing numbers)
+
+  2) Logical Operators
+     - ! (Not) → reverses boolean value
+     - && (And) → true if all conditions are true
+     - || (Or) → true if any condition is true
+
+  3) Control Flow
+     - if / else if / else → executes blocks based on conditions
+     - Nested if → condition inside another condition
+
+  4) Conditional (Ternary) Operator
+     - Syntax: condition ? ifTrue : ifFalse
+     - Can be nested for multiple conditions
+     - Useful for short conditional assignments or prints
+
+  5) Logical OR || and Nullish Coalescing ??
+     - || returns first truthy value (considers falsy: 0, "", null, undefined, false)
+     - ?? returns first defined value (only checks null or undefined)
+
+  ===========================================================
 */
 
-/*
-================================================
-PART 1 – USER ACCESS LEVEL
-Description: Determine user access level based on role and active status
-Requirements:
-- Variables: role ("admin", "editor", "viewer"), isActive (true/false)
-- Outpt messages according to role and active status
-- Use both if-else and ternary operator
-================================================
-*/
+/* ================================
+   TASK 1: Comparison Operators
+   ================================ */
+console.log("1) Comparison Operators Tests");
 
-let role = "editor";  // "admin", "editor", "viewer"
-let isActive = true;
+// Compare value only
+console.log(10 == "10");     // true → values are equal
+console.log(-100 == "-100"); // true → values are equal
+console.log(10 != "10");     // false → values are equal
 
-// Using if-else + logical operators
-if (!isActive) {
-  console.log("Inactive Account");
-} else if (role === "admin") {
-  console.log("Full Access");
-} else if (role === "editor") {
-  console.log("Edit Access");
-} else if (role === "viewer") {
-  console.log("View Only");
+// Compare value and type
+console.log(10 === "10"); // false → type mismatch
+console.log(10 !== "10"); // true → different type
+console.log(10 !== 10);   // false → same value & type
+
+// Relational operators
+console.log(10 > 20);   // false
+console.log(10 > 10);   // false
+console.log(10 >= 10);  // true
+console.log(10 < 20);   // true
+console.log(10 < 10);   // false
+console.log(10 <= 10);  // true
+
+console.log(typeof "Osama" === typeof "Ahmed"); // true → both are strings
+
+/* ================================
+   TASK 2: Logical Operators
+   ================================ */
+console.log("\n2) Logical Operators Tests");
+
+console.log(!true);                      // false → negates true
+console.log(!(10 == "10"));              // false → 10 == "10" is true, !true = false
+console.log(10 == "10" && 10 > 8 && 10 > 50); // false → last condition is false
+console.log(10 == "10" || 10 > 80 || 10 > 50); // true → first condition is true
+
+/* ================================
+   TASK 3: Control Flow
+   ================================ */
+console.log("\n3) Control Flow Tests");
+
+let price = 100;
+let discount = true;
+let discountAmount = 30;
+let country = "KSA";
+
+// if-else ladder
+if (discount === true) {
+  price -= discountAmount; // apply discount
+} else if (country === "Egypt") {
+  price -= 40;
+} else if (country === "Syria") {
+  price -= 50;
 } else {
-  console.log("Unknown Role");
+  price -= 10;
 }
 
-// Using ternary operator
-let accessMessage = !isActive
-  ? "Inactive Account"
-  : role === "admin"
-    ? "Full Access"
-    : role === "editor"
-      ? "Edit Access"
-      : role === "viewer"
-        ? "View Only"
-        : "Unknown Role";
+console.log(price); // 70 → discount applied
 
-console.log(accessMessage);
+// Nested if example
+price = 100;
+discount = false;
+country = "Egypt";
+let student = true;
 
-
-
-
-/*
-================================================
-PART 2 – GRADE EVALUATOR
-Description: Assign a grade based on the student's score
-Requirements:
-- Variable: score (number)
-- Use nested if-else to assign A, B, C, D, F
-- Optional: Use switch(true) for the same logic
-================================================
-*/
-
-let score = 85;
-
-// Nested if-else
-if (score >= 90 && score <= 100) {
-  console.log("Grade: A");
-} else if (score >= 80 && score < 90) {
-  console.log("Grade: B");
-} else if (score >= 70 && score < 80) {
-  console.log("Grade: C");
-} else if (score >= 60 && score < 70) {
-  console.log("Grade: D");
+if (discount === true) {
+  price -= discountAmount;
+} else if (country === "Egypt") {
+  if (student === true) {
+    price -= discountAmount + 30; // student gets extra discount
+  } else {
+    price -= discountAmount + 10;
+  }
 } else {
-  console.log("Grade: F");
+  price -= 10;
 }
 
-// switch(true) alternative
-switch (true) {
-  case score >= 90 && score <= 100:
-    console.log("Grade: A");
-    break;
-  case score >= 80 && score < 90:
-    console.log("Grade: B");
-    break;
-  case score >= 70 && score < 80:
-    console.log("Grade: C");
-    break;
-  case score >= 60 && score < 70:
-    console.log("Grade: D");
-    break;
-  default:
-    console.log("Grade: F");
-}
+console.log(price); // 40 → nested if applied
 
+/* ================================
+   TASK 4: Conditional (Ternary) Operator
+   ================================ */
+console.log("\n4) Ternary Operator Tests");
 
+let theName = "Mona";
+let theGender = "Female";
+let theAge = 30;
 
-
-/*
-================================================
-PART 3 – SHOPPING DISCOUNT
-Description: Assign discount based on membership type and cart value
-Requirements:
-- Variables: membership ("gold", "silver", null), cartValue (number)
-- Use nullish coalescing operator to assign default value
-- Apply ternary inside else for cartValue > 100
-================================================
-*/
-
-let membership = null; // "gold", "silver", null
-let cartValue = 120;
-
-// Use nullish coalescing to set default membership if null
-membership = membership ?? "none";
-
-let discount;
-if (membership === "gold") {
-  discount = 20; // Gold members get 20% discount
-} else if (membership === "silver") {
-  discount = 10; // Silver members get 10% discount
+// Classic if-else
+if (theGender === "Male") {
+  console.log("Mr");
 } else {
-  // For non-members, discount depends on cart value
-  discount = cartValue > 100 ? 5 : 0;
+  console.log("Mrs"); // Mrs → because female
 }
 
-console.log(`Discount: ${discount}%`);
+// Ternary operator
+console.log(theGender === "Male" ? "Mr" : "Mrs"); // Mrs
+let result = theGender === "Male" ? "Mr" : "Mrs";
+console.log(result); // Mrs
+console.log(`Hello ${theGender === "Male" ? "Mr" : "Mrs"} ${theName}`); // Hello Mrs Mona
 
+// Nested ternary
+theAge < 20
+  ? console.log(20)
+  : theAge > 20 && theAge < 60
+  ? console.log("20 To 60") // 20 To 60 → age = 30
+  : theAge > 60
+  ? console.log("Larger Than 60")
+  : console.log("Unknown");
 
+/* ================================
+   TASK 5: Logical OR || and Nullish Coalescing ??
+   ================================ */
+console.log("\n5) Logical OR || and Nullish Coalescing Tests");
 
+// Boolean conversion
+console.log(Boolean(100));  // true
+console.log(Boolean(-100)); // true
+console.log(Boolean(0));    // false → falsy
+console.log(Boolean(""));   // false → falsy
+console.log(Boolean(null)); // false → falsy
+
+price = 0;
+
+// Logical OR → returns first truthy
+console.log(`The Price Is ${price || 200}`);  // 200 → 0 is falsy
+
+// Nullish Coalescing → returns first non-null/undefined
+console.log(`The Price Is ${price ?? 200}`);  // 0 → 0 is defined, not null/undefined
 
 /*
-================================================
-PART 4 – WEEKEND ACTIVITY PLANNER
-Description: Decide activity based on day and weather
-Requirements:
-- Variables: day ("Saturday"/"Sunday"), weather ("sunny","rainy","snowy")
-- Use switch statement and if-logical alternative
-================================================
+  ================================
+  Expected Output Summary:
+
+  TASK 1: Comparison Operators
+  true, true, false, false, true, false
+  false, false, true, true, false, true
+  true
+
+  TASK 2: Logical Operators
+  false, false, false, true
+
+  TASK 3: Control Flow
+  70
+  40
+
+  TASK 4: Conditional (Ternary) Operator
+  Mrs
+  Mrs
+  Mrs
+  Hello Mrs Mona
+  20 To 60
+
+  TASK 5: Logical OR || and Nullish Coalescing ??
+  true, true, false, false, false
+  The Price Is 200
+  The Price Is 0
 */
-
-let day = "Saturday"; 
-let weather = "sunny";
-
-// Using switch statement
-switch(day) {
-  case "Saturday":
-    switch(weather) {
-      case "sunny": console.log("Go Hiking"); break;
-      case "rainy": console.log("Watch Movie"); break;
-      case "snowy": console.log("Skiing"); break;
-      default: console.log("Unknown Weather");
-    }
-    break;
-  case "Sunday":
-    switch(weather) {
-      case "sunny": console.log("Picnic"); break;
-      case "rainy": console.log("Read Book"); break;
-      case "snowy": console.log("Build Snowman"); break;
-      default: console.log("Unknown Weather");
-    }
-    break;
-  default:
-    console.log("Unknown Day");
-}
-
-// Using if + logical operators alternative
-if (day === "Saturday") {
-  if (weather === "sunny") console.log("Go Hiking");
-  else if (weather === "rainy") console.log("Watch Movie");
-  else if (weather === "snowy") console.log("Skiing");
-} else if (day === "Sunday") {
-  if (weather === "sunny") console.log("Picnic");
-  else if (weather === "rainy") console.log("Read Book");
-  else if (weather === "snowy") console.log("Build Snowman");
-}
-
-
-
-
-/*
-================================================
-PART 5 – LOGIN MESSAGE CHALLENGE
-Description: Show login messages based on username and last login days
-Requirements:
-- Variables: username (string|null), lastLogin (number)
-- Use nullish coalescing + ternary operator for concise solution
-================================================
-*/
-
-let username = null; // "Hassan" or null
-let lastLogin = 10; // days since last login
-
-let user = username ?? "Guest User"; // default to "Guest User" if null
-let loginMessage = username
-  ? lastLogin < 7
-    ? `Welcome Back ${username}!`
-    : `It's been a while ${username}, check our updates!`
-  : "Guest User, please sign up.";
-
-console.log(loginMessage);
