@@ -40,7 +40,7 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-### 3. Conditionals & Logic
+### 3. Conditionals & Logic ( P1 & P2 )
 - **Comparison Operators** – `==`, `===`, `>`, `<`, `>=`, `<=`, etc.  
 - **Logical Operators** – `&&`, `||`, `!`.  
 - **If Condition** – Basic conditional execution.  
