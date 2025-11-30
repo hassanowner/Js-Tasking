@@ -1,4 +1,8 @@
 
+/* D22_BOMP1 ----> Task 1 & Task 2 
+   D22_BOMP2 ----> Task 3 & Task 4
+   D22_BOMP3 ----> Task 5 & Task 6     */
+
 /*
   Test Task 1:
   Topics covered:
@@ -215,4 +219,156 @@ list.onclick = () => list.classList.toggle("highlight");
 
 
 
+/*
+   Task 5: Dynamic Card Creation
+   Topics Covered:
+     - CSS Manipulation
+     - Deal With Elements
+     - DOM Traversing
+     - Cloning
+     - Event Listener + Clones
+*/
+
+<!-- HTML Reference -->
+<div id="card-container"></div>
+
+<script>
+/*
+  1) CSS Manipulation
+  - Dynamically style an element
+*/
+let container = document.getElementById("card-container");
+container.style.border = "2px solid black";
+container.style.padding = "10px";
+container.style.width = "300px";
+
+/*
+  2) Deal With Elements
+  - Add new card before and after container
+*/
+let beforeCard = document.createElement("p");
+beforeCard.textContent = "Card will appear below:";
+
+let afterCard = document.createElement("p");
+afterCard.textContent = "Card created successfully!";
+
+container.before(beforeCard);
+container.after(afterCard);
+
+/*
+  3) Create & Clone Card
+  - Create a new card dynamically
+  - Clone it and append inside container
+*/
+let card = document.createElement("div");
+card.textContent = "Original Card";
+card.style.backgroundColor = "lightyellow";
+card.style.padding = "5px";
+card.style.margin = "5px";
+
+container.appendChild(card);
+
+// Clone the card
+let clonedCard = card.cloneNode(true);
+clonedCard.style.backgroundColor = "lightgreen";
+container.appendChild(clonedCard);
+
+/*
+  4) Event Listener
+  - Click on any card to highlight it
+*/
+container.addEventListener("click", function(e){
+  if(e.target.tagName === "DIV"){
+    e.target.style.border = "2px solid red";
+    console.log("Card clicked:", e.target.textContent);
+  }
+});
+
+/*
+  5) DOM Traversing
+  - Access parent and sibling
+*/
+console.log("Parent of first card:", card.parentElement);
+console.log("Next sibling of first card:", card.nextElementSibling);
+</script>
+
+
+
+
+
+
+
+/*
+   Task 6: Interactive List
+   Topics Covered:
+     - CSS Manipulation
+     - Deal With Elements
+     - DOM Traversing
+     - Cloning
+     - Event Listener + ClassList
+*/
+
+<!-- HTML Reference -->
+<ul id="todo-list">
+  <li>Task 1</li>
+  <li>Task 2</li>
+</ul>
+
+<button id="add-task">Add New Task</button>
+
+<script>
+/*
+  1) CSS Manipulation
+  - Style list and button
+*/
+let list = document.getElementById("todo-list");
+list.style.listStyleType = "circle";
+list.style.padding = "10px";
+
+let btn = document.getElementById("add-task");
+btn.style.marginTop = "10px";
+
+/*
+  2) Deal With Elements
+  - Append and prepend new tasks dynamically
+*/
+btn.onclick = function(){
+  let newTask = document.createElement("li");
+  newTask.textContent = "New Task " + (list.children.length + 1);
+  newTask.className = "task-item";
+
+  // Alternate adding at start or end
+  if(list.children.length % 2 === 0){
+    list.prepend(newTask);
+  } else {
+    list.append(newTask);
+  }
+};
+
+/*
+  3) DOM Traversing
+  - Show next/previous sibling of first task
+*/
+let firstTask = list.children[0];
+console.log("Next sibling of first task:", firstTask.nextElementSibling);
+console.log("Parent of first task:", firstTask.parentElement);
+
+/*
+  4) Cloning
+  - Clone first task and append
+*/
+let clonedTask = firstTask.cloneNode(true);
+list.appendChild(clonedTask);
+
+/*
+  5) Event Listener + ClassList
+  - Toggle 'completed' class on click
+*/
+list.addEventListener("click", function(e){
+  if(e.target.tagName === "LI"){
+    e.target.classList.toggle("completed");
+    e.target.style.textDecoration = e.target.classList.contains("completed") ? "line-through" : "none";
+  }
+});
+</script>
 
