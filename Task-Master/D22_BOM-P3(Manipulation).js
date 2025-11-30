@@ -1,18 +1,37 @@
-<!-- ============================================================
-   DOM Master Panel – Full Structured Tasks 
-   This document covers several key DOM topics in sequence.
-   Each section includes:
-     1) HTML Reference Block
-     2) JS Test Task Code with comments
-   ------------------------------------------------------------
-   Topics Included:
-     1. DOM CSS Manipulation
-     2. Deal With Elements (before, after, append, prepend, remove)
-     3. DOM Traversing
-     4. DOM Cloning
-     5. Add Event Listener + Clone Handling
-   ============================================================ -->
 
+
+<!-- ============================================================
+   DOM MASTER PANEL – FULL STRUCTURED TASKS
+
+   This document demonstrates key DOM manipulation concepts
+   in JavaScript. Each section includes:
+
+     1) HTML Reference Block
+     2) JS Test Task Code with detailed comments
+
+   ------------------------------------------------------------
+   Topics Covered (in order):
+
+     1. DOM CSS Manipulation
+        - Changing styles dynamically using JS
+        - Using style, cssText, removeProperty, setProperty
+     
+     2. Deal With Elements
+        - Adding elements before, after, inside (append, prepend)
+        - Removing elements dynamically
+     
+     3. DOM Traversing
+        - Accessing parent, next, previous siblings and children
+     
+     4. DOM Cloning
+        - cloneNode with deep copy
+     
+     5. Add Event Listener + Cloned Element Handling
+        - addEventListener
+        - Handling multiple events and detecting cloned elements
+============================================================ -->
+
+        
 <!-- ============================================================
    1) DOM CSS Manipulation
    ============================================================ -->
