@@ -1,4 +1,3 @@
-
     <!-- ============================================================
          DOM EVENTS & CLASSLIST MASTER PANEL
          
@@ -26,103 +25,153 @@
             - Accessing classList
             - Methods: length, contains, item, add, remove, toggle
        ============================================================ -->
+             
+<!-- ============================================================
+   1) DOM EVENTS
+============================================================ -->
 
-    <!-- 1) DOM EVENTS HTML -->
-    <button id="btn">Hover Me</button>
+<!-- HTML Reference -->
+<button id="btn">Hover Me</button>
 
-    <script>
-      let myBtn = document.getElementById("btn");
+<script>
+/*
+  DOM [Events]
+  - Use events directly in HTML or via JS
+  - Common events: onclick, oncontextmenu, onmouseenter, onmouseleave
+  - Window events: onload, onscroll, onresize
+*/
+let myBtn = document.getElementById("btn");
 
-      myBtn.onmouseleave = function () {
-        console.log("Clicked");
-      };
+// Triggered when mouse leaves the button
+myBtn.onmouseleave = function () {
+  console.log("Mouse left the button");
+};
 
-      window.onresize = function () {
-        console.log("Scroll");
-      };
-    </script>
-
-
-
-
-      
-    <!-- 2) FORM VALIDATION & PREVENT DEFAULT HTML -->
-    <form>
-      <input type="text" name="username" placeholder="Username" />
-      <input type="number" name="age" placeholder="Age" />
-      <button type="submit">Submit</button>
-    </form>
-
-    <a href="https://www.google.com/">Google Link</a>
-
-    <script>
-      let userInput = document.querySelector("[name='username']");
-      let ageInput = document.querySelector("[name='age']");
-
-      document.forms[0].onsubmit = function (e) {
-        let userValid = false;
-        let ageValid = false;
-
-        if (userInput.value !== "" && userInput.value.length <= 10) {
-          userValid = true;
-        }
-
-        if (ageInput.value !== "") {
-          ageValid = true;
-        }
-
-        if (userValid === false || ageValid === false) {
-          e.preventDefault();
-        }
-      };
-
-      document.links[0].onclick = function (event) {
-        console.log(event);
-        event.preventDefault();
-      };
-    </script>
+// Triggered when window is resized
+window.onresize = function () {
+  console.log("Window resized");
+};
+</script>
 
 
 
 
-      
 
-    <!-- 3) EVENT SIMULATION HTML -->
-    <input type="text" class="one" placeholder="Field One" />
-    <input type="text" class="two" placeholder="Field Two" />
-    <a href="https://www.google.com/">Trigger Link</a>
+    
 
-    <script>
-      let one = document.querySelector(".one");
-      let two = document.querySelector(".two");
+<!-- ============================================================
+   2) FORM VALIDATION & PREVENT DEFAULT
+============================================================ -->
 
-      window.onload = function () {
-        two.focus();
-      };
+<!-- HTML Reference -->
+<form>
+  <input type="text" name="username" placeholder="Username" />
+  <input type="number" name="age" placeholder="Age" />
+  <button type="submit">Submit</button>
+</form>
 
-      one.onblur = function () {
-        document.links[0].click();
-      };
-    </script>
+<a href="https://www.google.com/">Google Link</a>
+
+<script>
+/*
+  DOM [Form Validation & Prevent Default]
+  - Validate user input fields
+  - Prevent form submission if input invalid
+  - Prevent default action on links
+*/
+let userInput = document.querySelector("[name='username']");
+let ageInput = document.querySelector("[name='age']");
+
+// Form submission validation
+document.forms[0].onsubmit = function (e) {
+  let userValid = false;
+  let ageValid = false;
+
+  if (userInput.value !== "" && userInput.value.length <= 10) {
+    userValid = true;
+  }
+
+  if (ageInput.value !== "") {
+    ageValid = true;
+  }
+
+  if (!userValid || !ageValid) {
+    e.preventDefault(); // Stop submission if invalid
+  }
+};
+
+// Prevent default action on the first link
+document.links[0].onclick = function (event) {
+  console.log("Link clicked:", event);
+  event.preventDefault();
+};
+</script>
 
 
 
 
-      
-      
-    <!-- 4) DOM CLASSLIST HTML -->
-    <div id="my-div" class="osama example">Click Me To Toggle</div>
 
-    <script>
-      let element = document.getElementById("my-div");
+    
 
-      console.log(element.classList);
-      console.log(typeof element.classList);
-      console.log(element.classList.contains("osama"));
-      console.log(element.classList.contains("show"));
-      console.log(element.classList.item(1));
+<!-- ============================================================
+   3) EVENT SIMULATION
+============================================================ -->
 
-      element.onclick = function () {
-        element.classList.toggle("show");
-      };
-    </script>
+<!-- HTML Reference -->
+<input type="text" class="one" placeholder="Field One" />
+<input type="text" class="two" placeholder="Field Two" />
+<a href="https://www.google.com/">Trigger Link</a>
+
+<script>
+/*
+  DOM [Event Simulation]
+  - Programmatically trigger focus, blur, click
+*/
+let one = document.querySelector(".one");
+let two = document.querySelector(".two");
+
+// Automatically focus the second input on window load
+window.onload = function () {
+  two.focus();
+};
+
+// When the first input loses focus, trigger the link click
+one.onblur = function () {
+  document.links[0].click();
+};
+</script>
+
+
+
+
+
+    
+
+<!-- ============================================================
+   4) DOM CLASSLIST
+============================================================ -->
+
+<!-- HTML Reference -->
+<div id="my-div" class="osama example">Click Me To Toggle</div>
+
+<script>
+/*
+  DOM [ClassList]
+  - Access classList
+  - Methods: length, contains, item, add, remove, toggle
+*/
+let element = document.getElementById("my-div");
+
+// Log classList information
+console.log(element.classList);           // DOMTokenList of classes
+console.log(typeof element.classList);   // object
+console.log(element.classList.contains("osama")); // true
+console.log(element.classList.contains("show"));  // false
+console.log(element.classList.item(1));          // second class
+
+// Toggle 'show' class on click
+element.onclick = function () {
+  element.classList.toggle("show");
+};
+</script>
+
