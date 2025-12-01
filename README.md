@@ -160,7 +160,7 @@ The purpose of this repository is purely **educational**:
   Adding event listeners and handling events on original and cloned nodes.
 
 ---
-## How to Use 🎮
+## How to Use 🚧
 1. Open each JavaScript file in your preferred editor.  
 2. Read the comments and instructions for each task.  
 3. Run the code in **browser console** or **Node.js** to see outputs.  
