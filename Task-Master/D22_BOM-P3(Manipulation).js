@@ -43,7 +43,6 @@
   div {
     line-height: 1.6;
   }
-</style>
 
 /*
   ============================================
@@ -74,7 +73,7 @@ element.style.setProperty("font-size", "40px", "important");
 // Manipulate first stylesheet
 document.styleSheets[0].rules[0].style.removeProperty("line-height");
 document.styleSheets[0].rules[0].style.setProperty("background-color", "red", "important");
-</script>
+
 
   
 
@@ -99,7 +98,7 @@ document.styleSheets[0].rules[0].style.setProperty("background-color", "red", "i
   ============================================
 */
 
-<script>
+
 // Select the main element
 let element2 = document.getElementById("my-div");
 
@@ -124,7 +123,7 @@ element2.prepend(elPrepend); // Prepend INSIDE (start)
 
 // Remove the element completely (uncomment to test)
 // element2.remove();
-</script>
+
 
 
 
@@ -137,14 +136,15 @@ element2.prepend(elPrepend); // Prepend INSIDE (start)
    ============================================================ -->
 
 <!-- HTML Reference -->
-<div>
+<div class="box">
+  <p class="one">Paragraph One</p>
   <span class="two">Child Span</span>
+  <h3 class="three">Heading Three</h3>
 </div>
-
 
 /*
   ============================================
-  DOM [Traversing]
+  DOM Traversing – Navigating Between DOM Nodes
   - nextSibling
   - previousSibling
   - nextElementSibling
@@ -153,15 +153,32 @@ element2.prepend(elPrepend); // Prepend INSIDE (start)
   ============================================
 */
 
-<script>
 let span = document.querySelector(".two");
 
-console.log(span.parentElement); // Access parent element
+// 1) nextSibling — may return a Text Node (spaces, line breaks, comments)
+console.log("nextSibling:");
+console.log(span.nextSibling);
 
+// 2) nextElementSibling — returns the next element only (ignores text nodes)
+console.log("nextElementSibling:");
+console.log(span.nextElementSibling);
+
+// 3) previousSibling — may return a Text Node (spaces, line breaks)
+console.log("previousSibling:");
+console.log(span.previousSibling);
+
+// 4) previousElementSibling — returns the previous element only
+console.log("previousElementSibling:");
+console.log(span.previousElementSibling);
+
+// 5) parentElement — returns the direct parent element of the node
+console.log("parentElement:");
+console.log(span.parentElement);
+
+// When clicking the span element, remove its parent from the DOM
 span.onclick = function () {
-  span.parentElement.remove();   // Remove parent when span is clicked
+  span.parentElement.remove();
 };
-</script>
 
 
 
@@ -184,7 +201,7 @@ span.onclick = function () {
   - cloneNode(Deep)
   ============================================
 */
-<script>
+
 let myP = document.querySelector("p").cloneNode(true);
 let myDiv = document.querySelector("div");
 
@@ -192,7 +209,7 @@ myP.id = `${myP.id}-clone`;
 
 myDiv.appendChild(myP);
 
-</script>
+
 
 
 
@@ -216,7 +233,7 @@ myDiv.appendChild(myP);
   - click, clone, detect clone
   ============================================
 */
-<script>
+
 let mainPara = document.querySelector("p");
 
 // Clone on click
@@ -232,4 +249,4 @@ document.addEventListener("click", function (e) {
     console.log("I am a Cloned Paragraph");
   }
 });
-</script>
+
