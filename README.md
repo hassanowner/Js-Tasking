@@ -31,7 +31,7 @@ The purpose of this repository is purely **educational**:
 
 ---
 
-### 2. Numbers & Strings
+### 2. Numbers & Strings ( P1 & P2 )
 - **Number Basics** – Working with number types.  
 - **Number Methods** – Useful methods like `toFixed`, `parseInt`, `parseFloat`.  
 - **Math Object** – Built-in math functions and constants.  
