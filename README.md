@@ -113,7 +113,7 @@ The purpose of this repository is purely **educational**:
 - Objects + Functions Mix: Using functions to process and update object data.
 
 ---
-### 22. BOM – Browser Object Model ( P1 & P2 & P3 & P4 )
+### 22. DOM – Document Object Model ( P1 & P2 & P3 & P4 )
 - **DOM Selectors**  
   Selecting elements using IDs, classes, tags, and query selectors.
 
