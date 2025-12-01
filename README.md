@@ -113,6 +113,78 @@ The purpose of this repository is purely **educational**:
 - Objects + Functions Mix: Using functions to process and update object data.
 
 ---
+
+
+### 22. BOM – Browser Object Model  
+**1. DOM Selectors**
+- Selecting elements by ID, Tag Name, Class Name
+- Using querySelector and querySelectorAll
+- Accessing elements from collections
+
+**2. Get / Set Content & Attributes**
+- Reading and modifying innerHTML and textContent
+- Changing attributes directly
+- Using getAttribute and setAttribute
+
+**3. Check Attributes**
+- hasAttribute() to check existing attributes
+- Removing or updating attributes
+- hasAttributes() to check for any attributes
+
+**4. Create Elements (Basic)**
+- createElement for generating new nodes
+- Adding attributes and comments
+- Appending text and elements
+
+**5. Create Product (Heading + Paragraph)**
+- Building a structured product box
+- Inserting heading + paragraph inside a container
+
+**6. Deal With Children**
+- Accessing children vs childNodes
+- firstChild / lastChild
+- firstElementChild / lastElementChild
+
+**7. DOM Events**
+- Inline HTML events vs JS-based events
+- onclick, onmouseenter, onmouseleave, oncontextmenu
+- Window events: onload, onscroll, onresize
+- Input events: onfocus, onblur, onsubmit
+
+**8. Form Validation & Prevent Default**
+- Basic input validation
+- preventDefault() to block submission
+- Preventing default link behavior
+
+**9. Event Simulation***
+- Simulating: click(), focus(), blur()
+
+**10. DOM ClassList**
+- Accessing classList
+- Methods: length, contains, item, add, remove, toggle
+
+**11. DOM CSS Manipulation**
+- Changing styles dynamically
+- Using style, cssText
+- removeProperty / setProperty
+
+**12. Deal With Elements**
+- append, prepend, before, after
+- Removing elements dynamically
+
+**13. DOM Traversing**
+- Accessing parent, next, previous siblings
+- Navigating children
+
+**14. DOM Cloning**
+- cloneNode with deep cloning
+
+**15. Add Event Listener + Cloned Element Handling**
+- addEventListener usage
+- Handling multiple event types
+- Detecting & handling cloned elements
+---
+
 ## How to Use
 1. Open each JavaScript file in your preferred editor.  
 2. Read the comments and instructions for each task.  
