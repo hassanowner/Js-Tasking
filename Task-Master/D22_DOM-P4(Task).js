@@ -1,7 +1,7 @@
 
-/* D22_BOMP1 ----> Task 1 & Task 2 
-   D22_BOMP2 ----> Task 3 & Task 4
-   D22_BOMP3 ----> Task 5 & Task 6     */
+/* D22_DOMP1 ----> Task 1 & Task 2 
+   D22_DOMP2 ----> Task 3 & Task 4
+   D22_DOMP3 ----> Task 5 & Task 6     */
 
 /*
   Test Task 1:
