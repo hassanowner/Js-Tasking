@@ -12,8 +12,20 @@
    1. WINDOW OBJECT – FULL DEMO
    ============================================================ */
 
-// Change the document title using window
+// Change the document title using window (basic BOM example)
 window.document.title = "BOM Full Demo – JavaScript";
+
+// Using the BOM we can create many examples related to browser access,
+// such as controlling window size, getting the URL, or opening new windows.
+// The following examples demonstrate these capabilities.
+
+/* 
+============================================================
+NOTE:
+The code below is ONLY an example of what BOM can do.
+These features (window size, location, opening windows, etc.)
+WILL BE STUDIED LATER in detail.
+============================================================
 
 // Log the window size
 console.log("Window Width:", window.innerWidth);
@@ -22,7 +34,7 @@ console.log("Window Height:", window.innerHeight);
 // Show the current URL
 console.log("Current URL is:", window.location.href);
 
-// Open a new window (disabled in some browsers)
+// Open a new window (may be blocked in some browsers)
 let newWin = window.open("", "", "width=300,height=150");
 newWin.document.write("<h3>This is a new window opened by JavaScript</h3>");
 
@@ -31,8 +43,8 @@ setTimeout(() => {
   newWin.close();
 }, 3000);
 
-
-
+============================================================
+*/
 
 
 
