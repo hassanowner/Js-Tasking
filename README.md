@@ -182,6 +182,11 @@ The purpose of this repository is purely **educational**:
 - **Session Storage (Per Tab Storage)**  
   Session Storage (temporary tab data, auto-restore, auto-clear)
 ---
+## How to Use 🚧
+1. Open each JavaScript file in your preferred editor.  
+2. Read the comments and instructions for each task.  
+3. Run the code in **browser console** or **Node.js** to see outputs.  
+4. Modify and experiment with the code to understand the concepts better.  
 
 ## Purpose 📚
 This repository is a **learning and revision toolkit**. It is designed for:  
