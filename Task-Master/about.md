@@ -34,21 +34,36 @@
 
 ## 🏷️If Condition/ Else Control Flow
 
-• Conditional (Ternary) Operator  
-  - condition ? valueIfTrue : valueIfFalse  
+### Comparison Operators
+- == Equal (checks value only)
+- != Not Equal (checks value only)
+- === Identical (checks value + type)
+- !== Not Identical (checks value + type)
+- >, >=, <, <= (Relational operators for comparing numbers)
 
-• Logical OR || vs Nullish Coalescing ??  
-  - || → first truthy  
-  - ?? → first defined (not null/undefined)  
+### Logical Operators
+- ! (Not) → reverses boolean value
+- && (And) → true if all conditions are true
+- || (Or) → true if any condition is true
 
-• if  
-• else if  
-• else  
-• Nested if  
-• Conditional branching  
-• Switch Statement  
-  - case, default  
-  - strict comparison (===)  
+### Control Flow (if)
+- if / else if / else → executes blocks based on conditions
+- Nested if → condition inside another condition
+
+### Conditional (Ternary) Operator
+- Syntax: condition ? ifTrue : ifFalse
+- Can be nested for multiple conditions
+- Useful for short conditional assignments or prints
+
+### Logical OR || and Nullish Coalescing ??
+- || returns first truthy value (considers falsy: 0, "", null, undefined, false)
+- ?? returns first defined value (only checks null or undefined)
+
+### Switch Statement
+- switch(expression) with case and default
+- Default ordering matters
+- Multiple cases can match the same block
+- Comparison uses === (strict equality)
 
 ---
 ## 🏷️Strings
