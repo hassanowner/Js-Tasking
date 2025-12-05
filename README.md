@@ -1,4 +1,5 @@
 ![banner-review](banner-main.png)
+[View](about.md)
 # JavaScript Test Tasks – Comprehensive Educational Review
 
 ## Overview 🕸️🕷️
