@@ -347,7 +347,7 @@
 - Adding or overriding properties during assignment
 
 ---
-# 🏷️DOM Basics
+# 🏷️ Documents Object ( DOM )
 ### DOM Selectors
 - getElementById, getElementsByTagName, getElementsByClassName  
 - querySelector, querySelectorAll  
@@ -420,5 +420,45 @@
 - addEventListener  
 - Handling multiple event types  
 - Detecting and interacting with cloned elements
+
 ---
+# 🏷️Window Object ( BOM )
+### alert – confirm – prompt
+- Understanding user interaction dialogs  
+
+### setTimeout + clearTimeout
+- Timer creation and canceling  
+
+### setInterval + clearInterval
+- Repeating timers and stopping them  
+
+### Location, Window Control & History API
+- **Location Object**  
+  - Reading URL  
+  - Changing URL  
+
+- **Window Open / Close**  
+  - Opening new windows  
+  - Closing windows  
+
+- **History API**  
+  - back(), forward(), go()  
+
+- **Window Controls**  
+  - stop(), print(), focus()  
+  - scrollTo(), scroll(), scrollBy()  
+
+- **Scroll API + Scroll-To-Top Button**  
+  - Smooth scroll  
+  - Handling scroll events  
+
+### Storage (Local + Session)
+- **Local Storage (Basics)**  
+  - setItem, getItem, removeItem, clear, key  
+
+- **Local Storage Practice**  
+  - Color picker with persistent state  
+
+- **Session Storage**  
+  - Saving temporary data per tab
 
