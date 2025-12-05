@@ -68,3 +68,31 @@ Topics included:
   7) While Loop
   8) Do / While Loop
 
+
+
+What Is a Function?
+2. User-Defined vs Built-In Functions
+3. Function Syntax + Basic Usage
+4. Real-Life Function Example
+5. Parameters & Arguments
+6. Practical Examples
+7. Advanced Function Examples
+8. return Keyword
+9. Automatic Semicolon Insertion (ASI)
+10. Interrupting Function Execution
+11. Default Parameters (Old & ES6)
+12. Rest Parameters (...args)
+
+Default Parameters
+2. Rest Parameters (...args)
+3. Conditions inside Functions
+4. Loops & Array Operations
+5. Anonymous Functions
+6. Passing Functions as Arguments (Callbacks)
+7. setTimeout + Callback
+8. Nested Functions
+9. Returning Functions
+10. Arrow Functions
+11. Scope (Global / Local)
+12. Block Scope (if / for)
+13. Lexical Scope
