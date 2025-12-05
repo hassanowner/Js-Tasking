@@ -13,22 +13,46 @@
 
 ---
 
-## 🏷️Numbers & Math
+# 🏷️Numbers & Math
 
-• Number Formatting & Precision  
-• Number Methods  
-• Math Object Methods  
-• Number Challenge  
+### Number Formatting & Precision
+- Handling floating point precision issues
+- Formatting numbers using toFixed and toPrecision
+- Converting strings to numbers using Number(), parseInt(), parseFloat()
 
-• Comparison Operators  
-  - == , !=  
-  - === , !==  
-  - >, >=, <, <=  
+### Number Methods
+- toString()
+- toFixed()
+- toPrecision()
+- Number.isInteger()
+- Number.isNaN()
 
-• Logical Operators  
-  - ! (Not)  
-  - && (And)  
-  - || (Or)  
+### Math Object Methods
+- Math.round(), Math.floor(), Math.ceil()
+- Math.max(), Math.min()
+- Math.random()
+- Math.pow(), Math.sqrt(), Math.trunc()
+
+### Number Challenge
+- Applying number methods together
+- Solving formatting, rounding, and conversion tasks
+
+### String Methods (Basics)
+- length property
+- Accessing characters by index
+- toUpperCase(), toLowerCase()
+- trim(), trimStart(), trimEnd()
+
+### String Methods (slice, repeat, split)
+- slice(start, end)
+- repeat(times)
+- split(separator, limit)
+
+### String Advanced Methods
+- substring(), substr()
+- includes(), startsWith(), endsWith()
+- indexOf(), lastIndexOf()
+- chaining multiple string methods together
 
 ---
 
