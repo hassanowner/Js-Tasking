@@ -1,6 +1,4 @@
-========================================
-📌 JavaScript Fundamentals
-========================================
+## 🏷️JavaScript Fundamentals
 • Data Types & typeof  
 • Variables Introduction  
 • Identifiers Naming Rules  
@@ -13,10 +11,10 @@
 • Type Coercion (Implicit Casting)  
 • Assignment Operators  
 
+---
 
-========================================
-📌 Numbers & Math
-========================================
+## 🏷️Numbers & Math
+
 • Number Formatting & Precision  
 • Number Methods  
 • Math Object Methods  
@@ -32,6 +30,10 @@
   - && (And)  
   - || (Or)  
 
+---
+
+## 🏷️If Condition/ Else Control Flow
+
 • Conditional (Ternary) Operator  
   - condition ? valueIfTrue : valueIfFalse  
 
@@ -39,30 +41,25 @@
   - || → first truthy  
   - ?? → first defined (not null/undefined)  
 
-• Switch Statement  
-  - case, default  
-  - strict comparison (===)  
-
-
-========================================
-📌 If / Else Control Flow
-========================================
 • if  
 • else if  
 • else  
 • Nested if  
 • Conditional branching  
+• Switch Statement  
+  - case, default  
+  - strict comparison (===)  
 
+---
+## 🏷️Strings
 
-========================================
-📌 Strings
-========================================
 • Basic String Methods  
 • slice()  
 • repeat()  
 • split()  
 • Advanced String Methods  
 
+---
 
 ========================================
 📌 Arrays
